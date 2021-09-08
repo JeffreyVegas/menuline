@@ -1,0 +1,20 @@
+.edit-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.edit-text input {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 2.28rem !important;
+  line-height: 110% !important;
+  height: 37px !important;
+  background-color: white !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.edit-text i {
+  font-size: 2rem;
+}

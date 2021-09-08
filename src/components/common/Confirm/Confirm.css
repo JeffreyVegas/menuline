@@ -1,0 +1,19 @@
+.confirm {
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+.confirm-btns span {
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0 9px;
+}
+.confirm-btns span:hover {
+  color: black;
+}
+
+.confirm-btns span:nth-child(1) {
+  border-right: 1px solid #aaa;
+}

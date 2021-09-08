@@ -1,6 +1,10 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #ccc;
+.avatar {
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid white;
+}
+
+.spn {
+  border: 1px solid black;
 }

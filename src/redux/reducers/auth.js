@@ -2,7 +2,8 @@ import { types } from '../types';
 
 const initalState = {
   uid: null,
-  displayName: null,
+  name: null,
+  photoUrl: null,
 };
 
 export const authReducer = (state = initalState, action) => {
@@ -11,6 +12,7 @@ export const authReducer = (state = initalState, action) => {
       return {
         uid: action.payload.uid,
         name: action.payload.displayName,
+        photoUrl: action.payload.photoURL,
       };
     case types.logout:
       return initalState;

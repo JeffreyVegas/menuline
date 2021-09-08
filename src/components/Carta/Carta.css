@@ -1,0 +1,20 @@
+.carta {
+  padding: 8px;
+}
+
+.carta-categoria .product {
+  margin: 0;
+  border: 0;
+}
+
+.carta-categoria h5 {
+  text-align: center;
+}
+
+.carta-categoria .product div:nth-child(1) {
+  font-weight: bold;
+}
+
+.carta-categoria .product div:nth-child(3) {
+  font-size: 0.9rem;
+}

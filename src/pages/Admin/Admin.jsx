@@ -8,6 +8,7 @@ const Admin = () => {
   const [showInput, setShowInput] = useState(false);
   const [BusinessCollection, setBusinessCollection] = useState([]);
   const { uid } = useStore().getState().auth;
+  console.log('xoIxy6Nc60YZ61QClAtvjnAQZkm2');
 
   useEffect(() => {
     getCollectionByIdUser('business', uid, setBusinessCollection);
@@ -18,15 +19,19 @@ const Admin = () => {
   };
 
   return (
-    <div className="admin">
+    <div className="container">
+      <h3>Crear Tus Menus</h3>
       <div className="btn-add">
-        <button onClick={handleInput}>New</button>
+        <button onClick={handleInput} className="waves-effect waves-light btn">
+          New Project
+          <i className="fas fa-plus left"></i>
+        </button>
       </div>
-      <div className="admin-lista-projects">
+      <ul className="collection">
         {BusinessCollection.map((item) => (
           <Business project={item} key={item.id} />
         ))}
-      </div>
+      </ul>
       {showInput && <AddBusiness setShowInput={setShowInput} />}
     </div>
   );

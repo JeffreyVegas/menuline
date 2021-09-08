@@ -1,9 +1,9 @@
 import { types } from '../types';
 import { firebase, googleAuthProvider } from '../../firebase/firebase-config';
 
-export const login = (uid, displayName) => ({
+export const login = (uid, displayName, photoURL) => ({
   type: types.login,
-  payload: { uid, displayName },
+  payload: { uid, displayName, photoURL },
 });
 
 export const logout = () => ({
@@ -16,8 +16,8 @@ export const startGoogleAuth = () => {
       .auth()
       .signInWithPopup(googleAuthProvider)
       .then(({ user }) => {
-        console.log(user);
-        dispatch(login(user.uid, user.displayName));
+        console.log(user.photoURL);
+        dispatch(login(user.uid, user.displayName, user.photoURL));
       })
       .catch((e) => {
         console.log(e);

@@ -25,7 +25,7 @@ export const updateDato = async (nameCollection, id, dato) => {
     });
 };
 
-export const getCollection = async (nameCollection, state) => {
+export const getCollections = async (nameCollection, state) => {
   await db
     .collection(nameCollection)
     .orderBy('date')

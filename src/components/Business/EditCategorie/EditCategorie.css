@@ -1,0 +1,20 @@
+.edit-categorie {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.edit-categorie input {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 1.64rem !important;
+  line-height: 100% !important;
+  height: 26px !important;
+  background-color: white !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.edit-categorie i {
+  font-size: 2rem;
+}

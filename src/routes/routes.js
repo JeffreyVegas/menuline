@@ -3,6 +3,7 @@ import Admin from '../pages/Admin';
 import Auth from '../pages/Auth';
 import Business from '../pages/Business';
 import Error404 from '../pages/Error404';
+import CodeQR from '../pages/CodeQR';
 import Home from '../pages/Home';
 
 const routes = [
@@ -23,6 +24,13 @@ const routes = [
   {
     path: '/admin',
     component: Admin,
+    layout: LayoutBasic,
+    type: 'private',
+    exact: true,
+  },
+  {
+    path: '/codeqr/:idBusiness',
+    component: CodeQR,
     layout: LayoutBasic,
     type: 'private',
     exact: true,

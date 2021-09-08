@@ -5,6 +5,7 @@ import routes from './routes';
 import { login } from '../redux/actions/auth';
 import { firebase } from '../firebase/firebase-config';
 import PrivateRoutes from './PrivateRoutes';
+import Preloader from '../components/common/Preloader';
 
 const Navigation = () => {
   const dispatch = useDispatch();
@@ -15,7 +16,7 @@ const Navigation = () => {
     firebase.auth().onAuthStateChanged((user) => {
       if (user?.uid) {
         console.log(user);
-        dispatch(login(user.uid, user.displayName));
+        dispatch(login(user.uid, user.displayName, user.photoURL));
         setIsLoggedIn(true);
       } else {
         setIsLoggedIn(false);
@@ -25,7 +26,7 @@ const Navigation = () => {
   }, []);
 
   if (checking) {
-    return <h3>cargando ...</h3>;
+    return <Preloader />;
   }
 
   return (

@@ -1,0 +1,20 @@
+.qr-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+.qr-img a {
+  margin-top: 10px;
+}
+.qr-preview {
+  width: 154px;
+  height: 154px;
+  border: 3px dashed #ccc;
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}

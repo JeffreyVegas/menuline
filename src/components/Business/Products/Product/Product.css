@@ -1,0 +1,12 @@
+.product-select {
+  border: 1px solid #ccc;
+  margin-bottom: 3px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-select i {
+  cursor: pointer;
+  margin-left: 5px;
+}

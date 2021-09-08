@@ -1,0 +1,28 @@
+.flex-sb-ac {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.categorie-li {
+  position: relative;
+}
+.flex-sb-ac h5 {
+  margin: 0;
+  padding: 0;
+  min-width: 150px;
+  border: none;
+  outline: none;
+}
+.categorie-icons {
+  color: #aaa;
+  display: flex;
+  gap: 5px;
+  font-size: 1.3rem;
+}
+.categorie-icons i {
+  cursor: pointer;
+}
+.categorie-product-add {
+  width: 100%;
+}

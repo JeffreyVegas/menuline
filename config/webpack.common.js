@@ -8,7 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, '../dist'),
     filename: '[name].[contenthash].js',
-    publicPath: 'http://localhost:3005/',
+    publicPath: '',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
